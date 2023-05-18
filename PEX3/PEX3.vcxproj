@@ -19,9 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\..\Downloads\HW3 (2).zip" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="Game.h" />
     <ClInclude Include="Menu_wrapper.h" />
     <ClInclude Include="Sim.h" />

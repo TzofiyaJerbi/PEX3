@@ -105,3 +105,15 @@ void Sim::printSim() const
     cout << ", Hunger: " << getHunger();
     cout << ", Energy: " << getEnergy() << endl;
 }
+
+void Sim::PrintOption(){
+    cout << "Enter skill to practice: \n0  -> " << Skill->intType2string(0) << endl << "1  -> " << Skill->intType2string(1) << endl << "2  -> " << Skill->intType2string(2) << endl << "3  -> " << Skill->intType2string(3);
+
+}
+
+void Sim::GetSkill() {
+    PrintOption();
+    //cin >> ;
+
+    //Skill->intType2string() ;
+}

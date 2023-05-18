@@ -2,12 +2,20 @@
 #ifndef __SIM_CLASS_HW2_
 #define __SIM_CLASS_HW2_
 
+#include "Skill.h"
+
 class Sim {
 private:
     char* name;
     int age;
     int hunger;
     int energy;
+    Skill* Skill; //pointer to arry of skill
+
+    
+
+  
+    void PrintOption();
 
 public:
     // Constructors
@@ -37,6 +45,7 @@ public:
     void eat();
     void ageUp();
     void printSim() const;
+    void GetSkill();
 };
 
 #endif // !__SIM_CLASS_HW2_

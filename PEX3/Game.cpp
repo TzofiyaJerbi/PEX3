@@ -99,6 +99,11 @@ bool Game::performAction(const char* name, int action) const
 		found->ageUp();
 		std::cout << "aged Sim \"" << found->getName() << "\" by 1 year\n";
 		break;
+	case 3://action prctice
+		found->GetSkill();
+		std::cout << "add skill \"" ; // <<  found->typskilchus()\n";
+
+		break;
 	default:
 		return false;
 	}
