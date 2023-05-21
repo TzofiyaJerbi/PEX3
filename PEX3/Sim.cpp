@@ -8,6 +8,8 @@ Sim::Sim(const char* _name, int _age, int _hunger, int _energy) {
     age = _age;
     hunger = _hunger;
     energy = _energy;
+    
+
 }
 
 Sim::Sim() : Sim("Jane Doe")
@@ -104,16 +106,25 @@ void Sim::printSim() const
     cout << getName() << ", Age: " << getAge();
     cout << ", Hunger: " << getHunger();
     cout << ", Energy: " << getEnergy() << endl;
+    cout << *SkillOfObg;
+   // cout << this->printSim;
+   // cout << "the skill is: " << static skillTypeStrings[this->SkillOfObg->type] << "\n" << "the level is: " << this->SkillOfObg->skillLevel << "\n";
 }
 
 void Sim::PrintOption(){
-    cout << "Enter skill to practice: \n0  -> " << Skill->intType2string(0) << endl << "1  -> " << Skill->intType2string(1) << endl << "2  -> " << Skill->intType2string(2) << endl << "3  -> " << Skill->intType2string(3);
-
+    cout << "Enter skill to practice: \n0  -> " << SkillOfObg->intType2string(0) << endl << "1  -> " << SkillOfObg->intType2string(1) << endl << "2  -> " << SkillOfObg->intType2string(2) << endl << "3  -> " << SkillOfObg->intType2string(3) << "\n";
 }
 
 void Sim::GetSkill() {
+   //s = new Skill;
     PrintOption();
-    //cin >> ;
-
-    //Skill->intType2string() ;
+    int choice;
+    cin >> choice;
+    
+    SkillOfObg->type = choice;
+    SkillOfObg->practice();
+    cout << *SkillOfObg;
+   // cout << (this, SkillOfObg);// not work!!
+    //cout << "\nthe skill is: " << this->SkillOfObg->skillTypeStrings[choice] << "\n" << "the level is: " << this->SkillOfObg->skillLevel << "\n";
+   
 }

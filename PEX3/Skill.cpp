@@ -20,8 +20,19 @@ const char* Skill::intType2string(int type)
 ostream& operator<<(ostream& out, const Skill& s)
 {
 	//implement this method
+	int type;
+	type = s.getType();
+	if (type < 0)
+	{
 
-	out << "Skill type:" <<s.getTypeString() << "Skill Level:" << s.skillLevel;
+		out << "\nSkills: There is not skill yet\n";
+
+	}
+	else
+	{
+		out << "Skill type:" <<s.getTypeString() << "\nSkill Level:" << s.skillLevel;
+	}
+	
 
 	return out;
 }

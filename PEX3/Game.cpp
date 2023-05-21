@@ -100,8 +100,9 @@ bool Game::performAction(const char* name, int action) const
 		std::cout << "aged Sim \"" << found->getName() << "\" by 1 year\n";
 		break;
 	case 3://action prctice
+		std::cout << "add skill for \"" << found->getName() <<"\" \n";
 		found->GetSkill();
-		std::cout << "add skill \"" ; // <<  found->typskilchus()\n";
+		
 
 		break;
 	default:

@@ -27,6 +27,9 @@
     <ClInclude Include="Skill.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ResizableSkillArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp">
@@ -44,5 +47,13 @@
     <ClCompile Include="Skill.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ResizableSkillArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\HW3 (2).zip">
+      <Filter>Header Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

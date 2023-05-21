@@ -10,16 +10,23 @@ private:
     int age;
     int hunger;
     int energy;
-    Skill* Skill; //pointer to arry of skill
+    //Skill s;
 
-    
 
-  
+
+
+
     void PrintOption();
 
 public:
+     Skill* SkillOfObg = new Skill(-1, 0);; //skill;
+    //int SkillType;
+    //= SkillOfObg->skillTypeString[];
+    
+
     // Constructors
     Sim();
+    //Sim() = default;
     Sim(const char* name, int age, int hunger, int energy);
     Sim(const char* name);
     Sim(const Sim& other);
@@ -45,7 +52,10 @@ public:
     void eat();
     void ageUp();
     void printSim() const;
+    friend class Skill;
     void GetSkill();
+
+
 };
 
 #endif // !__SIM_CLASS_HW2_

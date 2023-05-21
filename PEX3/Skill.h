@@ -19,6 +19,7 @@ public:
 	int getType() const;
 	void practice();
 	void forget();
+	friend class Sim;
 	friend ostream& operator<<(ostream& out, const Skill& s);
 };
 

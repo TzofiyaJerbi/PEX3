@@ -58,7 +58,7 @@ void Menu_Wrapper::run()
 			cleanBuffer();
 			cout << "Choose Sim by name: ";
 			cin.getline(nameBuffer, 100);
-			cout << "Choose action(0 - eat, 1 - sleep, 2 - age up, 3 - practice): ";
+			cout << "Choose action(0 - eat, 1 - sleep, 2 - age up, 3 - practice): \n";
 			cin >> action;
 			if (!mainGameObject.performAction(nameBuffer, action))
 				cout << Menu_Wrapper::info << "Action not performed...\n";

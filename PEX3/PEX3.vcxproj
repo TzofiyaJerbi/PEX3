@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClInclude Include="Game.h" />
     <ClInclude Include="Menu_wrapper.h" />
+    <ClInclude Include="ResizableSkillArray.h" />
     <ClInclude Include="Sim.h" />
     <ClInclude Include="Skill.h" />
   </ItemGroup>
@@ -28,8 +29,12 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Menu_Wrapper.cpp" />
+    <ClCompile Include="ResizableSkillArray.cpp" />
     <ClCompile Include="Sim.cpp" />
     <ClCompile Include="Skill.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\HW3 (2).zip" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
