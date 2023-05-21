@@ -38,7 +38,8 @@
 ///// </summary>
 //void ResizableSkillArray::resize()
 //{
-//	//maxsize = 0 is the initial size
+//	//maxsize 
+// = 0 is the initial size
 //	if (maxSize == 0)
 //	{
 //		maxSize = 2;
